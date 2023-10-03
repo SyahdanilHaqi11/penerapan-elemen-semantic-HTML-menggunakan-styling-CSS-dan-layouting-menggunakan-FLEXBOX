@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #1178bd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+article,
+aside {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-inline-start: auto;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Gaya untuk menu dropdown */
+nav ul li {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+/* Gaya untuk aside (sidebar) */
+aside {
+  background-color: #333;
+  color: white;
+  width: 10px; /* Lebar sidebar */
+  padding: 20px;
+  text-align: left; /* Teks di sidebar diatur menjadi kiri */
+  flex: 0 0 200px;
+  height: 400px;
+}
+
+aside h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Gaya untuk konten dalam sidebar */
+aside p {
+  font-size: 14px;
+}
+
+/* Gaya untuk tautan dalam sidebar */
+aside a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end; /* Menggeser elemen <aside> ke kanan */
+}
+
+/* Stil untuk layar kecil */
+@media screen and (max-width: 768px) {
+  /* Atur gaya CSS khusus untuk layar dengan lebar maksimum 768px */
+}
